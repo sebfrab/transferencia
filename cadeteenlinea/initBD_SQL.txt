@@ -1,0 +1,14 @@
+delete from calificaciones;
+delete from notas_parciales;
+delete from notas_finales;
+delete from notas_fisico;
+delete from nivelacion;
+delete from transaccion;
+delete from ingles_tae;
+delete from asignatura;
+delete from francos;
+delete from cadete_apoderado;
+delete from apoderado;
+delete from cadete;
+//delete from funcionario;
+delete from usuario WHERE perfil <> 'funcionario' ;
