@@ -1,0 +1,24 @@
+USE cadeteenlinea;
+delete transaccion;
+delete notas_finales;
+delete notas_parciales;
+delete calificaciones;
+delete ingles_tae;
+delete asignatura;
+delete notas_fisico;
+delete nivelacion;
+delete francos;
+delete cadete_apoderado;
+delete apoderado;
+delete cadete;
+delete usuario;
+
+
+DBCC CHECKIDENT (notas_finales, RESEED,0);
+DBCC CHECKIDENT (notas_parciales, RESEED,0);
+DBCC CHECKIDENT (calificaciones, RESEED,0);
+DBCC CHECKIDENT (asignatura, RESEED,0);
+DBCC CHECKIDENT (ingles_tae, RESEED,0);
+DBCC CHECKIDENT (notas_fisico, RESEED,0);
+DBCC CHECKIDENT (nivelacion, RESEED,0);
+DBCC CHECKIDENT (francos, RESEED,0);
